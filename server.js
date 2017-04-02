@@ -1,8 +1,6 @@
 const express = require('express');
-const Sequelize = require('sequelize');
-const sequelizeConnection = require('./sequelize-connection');
-const bodyParser = require('body-parser');
-
+const bodyparser = require('body-parser');
+const path = require('path');
 let app = express();
 
 app.use(bodyparser.urlencoded({ extended: false }));
